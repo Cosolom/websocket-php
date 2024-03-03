@@ -384,9 +384,8 @@ class Server implements LoggerAwareInterface, Stringable
             $name = $stream->getRemoteName();
             $this->streams->attach($stream, $name);
             $connection = new Connection($stream, false, true);
-            $connection
-                ->setLogger($this->logger)
-                ->setFrameSize($this->frameSize)
+            $connection->setLogger($this->logger);
+            $connection->setFrameSize($this->frameSize)
                 ->setTimeout($this->timeout)
                 ;
             foreach ($this->middlewares as $middleware) {
