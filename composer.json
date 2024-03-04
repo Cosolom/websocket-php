@@ -1,8 +1,8 @@
 {
-    "name": "phrity/websocket",
+    "name": "cosolom/websocket",
     "type": "library",
     "description": "WebSocket client and server",
-    "homepage": "https://phrity.sirn.se/websocket",
+    "homepage": "https://github.com/Cosolom/websocket-php",
     "keywords": ["websocket", "client", "server"],
     "license": "ISC",
     "authors": [
