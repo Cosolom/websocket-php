@@ -99,14 +99,13 @@ class Connection implements LoggerAwareInterface, Stringable
      * @param Psr\Log\LoggerInterface $logger Logger implementation
      * @return self.
      */
-    public function setLogger(LoggerInterface $logger): self
+    public function setLogger(LoggerInterface $logger): void
     {
         $this->logger = $logger;
         $this->httpHandler->setLogger($logger);
         $this->messageHandler->setLogger($logger);
         $this->middlewareHandler->setLogger($logger);
         $this->logger->debug("[connection] Setting logger: " . get_class($logger));
-        return $this;
     }
 
     /**

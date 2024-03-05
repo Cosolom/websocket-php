@@ -115,7 +115,6 @@ class Client implements LoggerAwareInterface, Stringable
         if ($this->connection) {
             $this->connection->setLogger($this->logger);
         }
-        return $this;
     }
 
     /**
